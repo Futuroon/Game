@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #011d31; /* Azul escuro da paleta */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    color: #e9dac9; /* Branco suave ou areia */
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header img {
+    max-width: 250px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+iframe {
+    width: 320px; /* Ajuste da largura do jogo */
+    height: 480px; /* Ajuste da altura do jogo */
+    border-radius: 10px;
+}
+
+footer {
+    padding: 10px;
+    background-color: #0a0914; /* Fundo preto para o rodapé */
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #faf4ee; /* Laranja da paleta para o texto do rodapé */
+}
+
+h1 {
+    margin: 10px 0 20px 0;
+    font-size: 1.5rem;
+    color: #ffecda; /* Título em laranja para destaque */
+}
