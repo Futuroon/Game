@@ -7,9 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #011d31; /* Azul escuro da paleta */
     font-family: 'Poppins', sans-serif; /* Fonte moderna */
     color: #e9dac9; /* Branco suave ou areia */
@@ -25,23 +23,29 @@ header img {
 }
 
 main {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 2px; /* Margem de 2px */
 }
 
 iframe {
-    width: 320px; /* Ajuste da largura do jogo */
-    height: 480px; /* Ajuste da altura do jogo */
+    width: calc(100% - 15px); /* Ajuste para margem de 2px em cada lado */
+    max-width: 100%;
+    height: calc(100vh - 150px); /* Altura dinâmica considerando header e footer */
+    max-height: 100%;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 footer {
     padding: 10px;
     background-color: #0a0914; /* Fundo preto para o rodapé */
     width: 100%;
+    position: sticky;
+    bottom: 0;
 }
 
 footer p {
