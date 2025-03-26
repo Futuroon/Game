@@ -12,6 +12,9 @@ body {
     font-family: 'Poppins', sans-serif; 
     color: #e9dac9;
     text-align: center;
+    user-select: none;  /* Prevents text selection */
+    -webkit-user-select: none;  /* For Safari */
+    -ms-user-select: none;  /* For older versions of IE */
 }
 
 header {
